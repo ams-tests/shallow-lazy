@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shallow | Official Website</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body id="home">
+    <!-- Header -->
+    <header id="main">
+      <nav>
+        <ul>
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/shows.html">Shows</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+          <li><a href="./pages/gallery.html">Gallery</a></li>
+        </ul>
+        <h1 class="logo">Shallow</h1>
+      </nav>
+      <a href="#categories">
+        <img src="images/arrow-blue.svg" alt="down arrow" class="scroll" />
+      </a>
+    </header>
+    <!-- Header end -->
+
+    <div class="container">
+      <!-- Categories -->
+      <section id="categories" class="categories">
+        <a href="pages/about.html">
+          <div class="category about lazyload" data-bgset="../images/about.jpg">
+            <div class="card">
+              <h2>About</h2>
+            </div>
+          </div>
+        </a>
+        <div class="category shows lazyload" data-bgset="../images/shows.jpg"">
+          <a href="pages/shows.html">
+            <div class="card">
+              <h2>Shows</h2>
+            </div>
+          </a>
+        </div>
+        <div class="category contact lazyload" data-bgset="../images/contact.jpg"">
+          <a href="pages/contact.html">
+            <div class="card">
+              <h2>Contact</h2>
+            </div>
+          </a>
+        </div>
+        <div class="category gallery lazyload" data-bgset="../images/gallery.jpg"">
+          <a href="pages/gallery.html">
+            <div class="card">
+              <h2>Gallery</h2>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Categories end -->
+      <!-- Footer -->
+      <footer>
+        <a href="#home" class="up-arrow"
+          ><img src="images/double-arrow-pink.svg" alt="up arrow"
+        /></a>
+        <div class="footer-container">
+          <div class="copyright">
+            <p>&copy;2019 COPYRIGHT AISHA SMITH</p>
+            <p>TERMS OF USE | PRIVACY POLICY | COOKIE POLICY</p>
+          </div>
+          <div class="social">
+            <a href="https://instagram.com/" target="blank"
+              ><img src="images/i-pink.svg" alt="Instagram"
+            /></a>
+
+            <a href="https://facebook.com/" target="blank">
+              <img src="images/fb-pink.svg" alt="Facebook"
+            /></a>
+
+            <a href="https://twitter.com/" target="blank">
+              <img src="images/t-pink.svg" alt="Twitter"
+            /></a>
+            <a href="https://youtube.com/" target="blank">
+              <img src="images/yt-pink.svg" alt="YouTube"
+            /></a>
+          </div>
+          <div class="newsletter">
+            <form action="#">
+              <input type="text" name="email" placeholder="NEWSLETTER SIGNUP" />
+              <input type="submit" id="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer end -->
+    <script>
+      const submit = document.getElementById("submit");
+
+      submit.addEventListener("click", function(e) {
+        e.preventDefault();
+        alert("This contact form is not currently in use.");
+      });
+    </script>
+    <script src="./js/ls.bgset.min.js"></script>
+    <script src="./js/lazysizes.min.js"></script>
+  </body>
+</html>
